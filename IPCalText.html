@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ネットワークアドレス計算機</title>
+        <h2>ネットワークアドレス計算機</h2>
+        <p>IPv4アドレスのネットワークアドレスを求めます。</p>
+        <script src="IPCalScript.js"></script>
+        <link rel ="stylesheet" type="text/css" href="IPCalLayout.css">
+        
+    </head>
+    <body>
+        <p>IPv4アドレス:<input type="text" name="IP" size="40"></p>
+        <p>サブネットマスク長:
+            <select id ="subLength">
+                <option value="1">/1</option>
+                <option value="2">/2</option>
+                <option value="3">/3</option>
+                <option value="4">/4</option>
+                <option value="5">/5</option>
+                <option value="6">/6</option>
+                <option value="7">/7</option>
+                <option value="8">/8</option>
+                <option value="9">/9</option>
+                <option value="10">/10</option>
+                <option value="11">/11</option>
+                <option value="12">/12</option>
+                <option value="13">/13</option>
+                <option value="14">/14</option>
+                <option value="15">/15</option>
+                <option value="16">/16</option>
+                <option value="17">/17</option>
+                <option value="18">/18</option>
+                <option value="19">/19</option>
+                <option value="20">/20</option>
+                <option value="21">/21</option>
+                <option value="22">/22</option>
+                <option value="23">/23</option>
+                <option value="24">/24</option>
+                <option value="25">/25</option>
+                <option value="26">/26</option>
+                <option value="27">/27</option>
+                <option value="28">/28</option>
+                <option value="29">/29</option>
+                <option value="30">/30</option>
+                <option value="31">/31</option>
+                <option value="32">/32</option>
+                </select>
+        </p>
+        <p>表示方法:
+            <input type="radio" name="systems" value="2" onclick="ClickedButton()">2進表示
+            <input type="radio" name="systems" value="10" checked onclick="ClickedButton()">10進表示
+            <input type="radio" name="systems" value="16" onclick="ClickedButton()">16進表示
+        </p>
+        <p>
+        <input type="button" value="変換" onclick="ClickedButton()">
+        <input type="reset" value="リセット" onclick="reset()">
+        </p>
+        
+        <p>ネットワークアドレス:<input type="text" name="NetIP" size ="40" disabled="disabled"></p>
+        
+        <div border ="1" id="table"></div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+
+h2{
+    border: solid 2px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+}
+
+table,td{
+    border:thin solid;
+    text-align: center;
+    margin:auto;
+}
+
